@@ -17,11 +17,52 @@
         <!-- 
           try writing out the requirements first as comments
         this will also help you fill in your PR message later-->
+
+        <!-- 
+        Requirements:
+          - Name: required, at least 2 characters.
+          - Email: required, valid email format.
+          - Color: choose 1 of 3 options.
+          - Size: choose XS, S, M, L, XL, or XXL.
+          - All fields must be required.
+         -->
+
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" minlength="2" required> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" required> <br><br>
+
+        <fieldset>
+          <legend>Color:</legend>
+
+          <input type="radio" name="color" id="red" value="red" required>
+          <label for="red">Red 🟥</label>
+
+          <input type="radio" name="color" id="blue" value="blue">
+          <label for="blue">Blue 🟦</label>
+
+          <input type="radio" name="color" id="purple" value="purple">
+          <label for="purple">Purple 🟪</label>
+        </fieldset> <br>
+
+        <label for="size">Size:</label>
+        <select name="size" id="size" required>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+        
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Luke</h2>
     </footer>
   </body>
 </html>
